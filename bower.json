@@ -1,0 +1,7 @@
+{
+  "name": "pankiv",
+  "dependencies": {
+    "jquery": "1.11.3",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

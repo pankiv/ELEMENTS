@@ -1,0 +1,79 @@
+/* M O D U L E S */
+/*accordion & toggles*/
+
+.shortcode_accordion_item_body, .shortcode_toggles_item_body {
+  display: none;
+}
+
+.module_cont .accordion_box {
+  margin-top: 5px;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.shortcode_accordion_item_title, .shortcode_toggles_item_title {
+  cursor: pointer;
+  position: relative;
+  padding: 13px 41px 13px 18px;
+  text-transform: uppercase;
+  margin: 0;
+  background: #26272b;
+  transition: background 300ms,color 300ms;
+}
+
+.ui-accordion-header-icon {
+  display: none;
+}
+
+.shortcode_accordion_item_title span.ico, .shortcode_toggles_item_title span.ico {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  right: 14px;
+  top: 15px;
+}
+
+.shortcode_accordion_item_title span.ico:before, .shortcode_toggles_item_title span.ico:before {
+  content: '';
+  width: 9px;
+  height: 1px;
+  left: 0;
+  top: 4px;
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+
+.shortcode_accordion_item_title span.ico:after, .shortcode_toggles_item_title span.ico:after {
+  content: '';
+  width: 1px;
+  height: 9px;
+  left: 4px;
+  top: 0;
+  display: block;
+  background: #fff;
+  position: absolute;
+  transition: opacity 300ms;
+}
+
+.shortcode_accordion_item_title.state-active span.ico:after, .shortcode_toggles_item_title.state-active span.ico:after {
+  opacity: 0;
+}
+
+.shortcode_accordion_item_body {
+  padding: 16px 0 13px;
+}
+
+.shortcode_toggles_item_body {
+  padding: 16px 0 13px;
+  display: none;
+}
+
+.module_accordion .shortcode_accordion_item_body p, .shortcode_toggles_shortcode p {
+  margin: 10px 0 0;
+}
+
+.module_accordion .shortcode_accordion_item_body p:first-child, .shortcode_toggles_shortcode p:first-child {
+  margin: 0;
+}
